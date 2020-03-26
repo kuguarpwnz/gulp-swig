@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "chai": "~1.7.2",
-    "minimist": "^1.2.5",
     "mocha": "^7.1.1",
     "swig-extras": "0.0.1"
   }
