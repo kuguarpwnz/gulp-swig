@@ -169,7 +169,7 @@ Enable swig extensions using the setup option.
 
 ```javascript
 var swig = require('gulp-swig');
-var marked = require('swig-marked');
+var marked = require('swig-extras');
 var opts = {
   setup: function(swig) {
     marked.useTag(swig, 'markdown');

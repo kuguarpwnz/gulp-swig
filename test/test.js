@@ -3,7 +3,7 @@ var expect = require('chai').expect;
 var task = require('../');
 var es = require('event-stream');
 var path = require('path');
-var marked = require('swig-marked');
+var marked = require('swig-extras');
 
 require('mocha');
 
@@ -118,7 +118,7 @@ describe('gulp-swig compilation', function() {
         setup: function(swig) {
           marked.useTag(swig, 'markdown');
         },
-        expected: '<p><strong>hello</strong><br>world</p>\n'
+        expected: '<p><strong>hello</strong><br/>world</p>'
       };
       gulp.src(filename_with_markdown)
         .pipe(task(opts))
